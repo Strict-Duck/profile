@@ -22,14 +22,11 @@
     var profilePhoto = document.getElementById('profilePhoto');
     var profile = document.getElementById('profile');
     
-      
-  
-    
 
            
       // Add a realtime listener
       firebase.auth().onAuthStateChanged(firebaseUser => {
-          if(!user){
+          if(user){
                  
             //Change UI
             console.log(user);
@@ -41,7 +38,6 @@
                         
             });
              }
-          
           
           else{
             //Change UI
