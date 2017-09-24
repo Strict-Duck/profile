@@ -25,15 +25,11 @@
       
   
     
-      
-    if(!user)
-        {
-        window.location = "https://strict-duck.github.io/"; 
-        }
+
            
       // Add a realtime listener
       firebase.auth().onAuthStateChanged(firebaseUser => {
-          if(user){
+          if(!user){
                  
             //Change UI
             console.log(user);
